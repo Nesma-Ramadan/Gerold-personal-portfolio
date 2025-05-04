@@ -1,0 +1,432 @@
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 16px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+figure {
+    width: 3.75rem;
+    height: 3.75rem;
+}
+
+.bt-l {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav .bt-l i {
+    font-size: 2.5rem;
+    color: var(--secondary-color-1);
+}
+
+/* =============================/NAV======================== */
+/* =============================HERO SECTION======================== */
+main {
+    background:
+ radial-gradient(circle at center, var(--praimary-color-3), var(--praimary-color-1),var(--praimary-color-1));
+    position: relative;
+    padding-top: 3.75rem;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 100%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, var(--praimary-color-3), transparent 70%);
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.bt-icon .bt i {
+    padding-left: 4px;
+}
+
+.main .flex{
+    display: flex;
+    flex-flow: column wrap;
+    align-content:space-between;
+    margin-top: 52px;
+}
+
+main figure {
+    width: 75%;
+    height: fit-content;
+    border: 2px solid var(--praimary-color-3);
+    border-radius: 36px;
+    transform: rotate(8deg);
+    align-self: center;
+    margin: 2.5rem auto;
+    transition: .8s;
+}
+
+main figure:hover {
+    transform: rotate(0deg);
+    border: 2px solid var(--praimary-color-2);
+}
+
+.hero-section .header {
+    text-align: left;
+    height: fit-content;
+}
+
+main .header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    color: var(--neutral-color-2);
+}
+
+main .header h1 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+main .pragraph p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    color: var(--neutral-color-2);
+    padding: 8px 0;
+}
+
+main .bt-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    margin-bottom: 40px;
+}
+
+main .bt-icon .button button {
+    cursor: pointer;
+    margin-right: 18px;
+}
+
+main .icon a i {
+    font-size: 1rem;
+    color: var(--praimary-color-2);
+    padding: 8px;
+    border: 2px solid var(--praimary-color-2);
+    border-radius: 50%;
+    margin: 0 8px;
+    transition: 1s;
+}
+
+main .icon a i:hover {
+    background: var(--praimary-color-2);
+    color: var(--secondary-color-1);
+}
+
+main .counter {
+    display: flex;
+    flex-flow: wrap row;
+    
+}
+
+main .counter section {
+    width: calc(100%/2);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 16px 0;
+
+}
+
+main .counter .number h2 {
+    color: var(--neutral-color-2);
+}
+
+main .counter .number h2 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    padding-right: 16px;
+}
+
+main .counter .text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* =============================/HERO SECTION======================== */
+/* =============================My Recent Works======================== */
+.section-1 {
+    background: radial-gradient(circle at center, var(--praimary-color-3), var(--praimary-color-1),var(--praimary-color-1));
+    padding: 40px 0;
+    
+}
+
+.section-1 .bar {
+    width: 50%;
+    margin: 40px auto;
+    background-color: var(--secondary-color-2);
+    border-radius: 24px;
+}
+
+.section-1 .bar ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.section-1 .bar ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: var(--secondary-color-1);
+
+}
+
+.section-1 .bar ul li {
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.section-1 .bar ul .all {
+    background: var(--bg-gradient);
+}
+
+.section-1 .cards {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+  align-items: center;
+}
+
+.section-1 .cards .card {
+    overflow: hidden;
+    margin-bottom: 40px;
+    background-color: var(--praimary-color-4);
+    padding: 25px 15px 0;
+    border-radius: 8px;
+}
+
+.section-1 .cards .card-2 {
+    order: -1;
+}
+
+.section-1 .cards .card figure {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+.section-1 .cards .card figure a {
+    width: 100%;
+    background: var(--bg-gradient);
+    padding: 16px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--secondary-color-1);
+    transition: .5s;
+    position: absolute;
+    top: 100%;
+}
+
+.section-1 .cards .card figure a i {
+    font-size: 24px;
+    line-height: 24px;
+    transition: .5s;
+
+}
+
+.section-1 .cards .card figure:hover a {
+    top: 76%;
+}
+
+.section-1 .cards .card figure:hover i {
+    transform: rotate(1400deg);
+}
+
+
+
+
+/* =============================/My Recent Works======================== */
+/* =============================/My SKILLS==================== */
+.my-skills {
+    background: var(--praimary-color-1);
+    overflow: auto;
+
+}
+
+.my-skills .items {
+    width: 70%;
+    margin: 52px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-skills .item .inner-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-skills .item .inner-item:hover .icon {
+    filter: none;
+}
+
+.my-skills .icon {
+    background: var(--secondary-color-2);
+    filter: grayscale(100%) brightness(80%);
+    padding: 15px 25px;
+    text-align: center;
+    border: 2px solid var(--secondary-color-2);
+    border-radius: 16px;
+
+}
+
+.my-skills .icon figure {
+    box-sizing: content-box;
+    padding: 16px 24px;
+
+}
+
+.my-skills .icon .numper {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 20px;
+    color: var(--praimary-color-2);
+}
+
+.my-skills .item .inner-item p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--praimary-color-2);
+    margin: 8px 0 24px;
+}
+
+/* =============================/My SKILLS==================== */
+/* =============================section 3==================== */
+.section-3 {
+    background: var(--secondary-color-2);
+    padding: 52px 0;
+}
+
+.section-3 .contact .item {
+    display: flex;
+    gap: 16px;
+    padding: 18px 0;
+}
+
+.section-3 .contact .icon i {
+    font-size: 20px;
+    padding: 16px;
+    border-radius: 50%;
+    color: var(--secondary-color-1);
+    background: var(--bg-gradient-2);
+}
+
+.section-3 .contact .text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.section-3 .contact .text p,
+a {
+    color: var(--neutral-color-2);
+}
+
+.section-3 .contact .text a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.section-3 .contact .text a:hover {
+    color: var(--praimary-color-2);
+}
+
+.section-3 .form {
+    background: var(--praimary-color-4);
+    border-radius: 16px;
+    padding: 30px 15px;
+}
+
+.section-3 .form .header {
+    text-align: start;
+    padding-bottom: 16px;
+}
+
+.section-3 .form .input {
+    width: 100%;
+    background: var(--secondary-color-2);
+    border: 1px solid var(--border-color-1);
+    border-radius: 8px;
+}
+
+.section-3 .form .input:focus {
+    border: 1px solid var(--praimary-color-2);
+}
+
+.section-3 .form .input1,
+.input2 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+}
+
+.section-3 .form form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+    justify-content: space-around;
+}
+
+.section-3 .form textarea::placeholder {
+    font-family: var(--font-family);
+}
+
+.section-3 .form button {
+    width: fit-content;
+}
+
+/* =============================/section 3==================== */
+/* =============================footer==================== */
+footer {
+    background: var(--praimary-color-1);
+    text-align: center;
+    padding: 32px 0 16px;
+}
+
+footer .container a img {
+    width: 75px;
+    margin: 16px auto;
+}
+
+footer .container p {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--praimary-color-2);
+}
+
+
+/* =============================/footer==================== */

@@ -1,0 +1,306 @@
+@media screen and (min-width:640px) {
+    .container {
+        width: 69%;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        width: 90%;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    nav .nav .bt-l i {
+        display: none;
+    }
+
+    nav .logo .mail a,
+    .list a {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 23px;
+    }
+
+    nav .list li {
+        position: relative;
+
+    }
+
+    nav .list li::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: var(--bg-gradient);
+        transition: 1s ease-in-out;
+        pointer-events: none;
+    }
+
+    nav .list li:hover::after {
+        width: 100%;
+
+    }
+
+    nav .logo .mail a:hover {
+        color: var(--praimary-color-2);
+    }
+
+    .list ul {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .main .flex {
+        height: 600px;
+        row-gap: 24px;
+    }
+
+    main .main figure {
+        width: 48%;
+        order: 4;
+    }
+
+    .hero-section .header {
+        width: 50%;
+        order: -1;
+    }
+
+    main .pragraph {
+        width: 50%;
+        order: 2;
+    }
+
+    main .header h2 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 54px;
+
+    }
+
+    main .header h1 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+
+    main .bt-icon {
+        width: 50%;
+        order: 3;
+    }
+
+    main .counter {
+        order: 5;
+    }
+
+    main .counter section {
+        width: calc(100%/4);
+    }
+
+    .header {
+        width: 75%;
+    }
+
+    .section-1 .cards {
+        height: 800px;
+        gap: 2rem;
+    }
+
+    .section-1 .cards .card {
+        width: calc(100%/2);
+        margin-bottom: 0;
+        padding: 36px 36px 0;
+
+    }
+
+    .section-1 .cards .card figure a h2 {
+        font-size: 30px;
+        line-height: 30px;
+        padding-bottom: 16px;
+
+    }
+
+    .section-1 .cards .card figure:hover a {
+        top: 60%;
+    }
+
+    .my-skills .items {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .my-skills .items .last {
+        margin: auto;
+    }
+
+    .section-3 .form {
+        width: 50%;
+    }
+
+    .section-3 .contact {
+        order: 1;
+    }
+
+    .section-3 .flex {
+        justify-content: center;
+        align-content: space-between;
+        height: 800px;
+    }
+
+    .section-3 .header {
+        width: fit-content;
+    }
+
+    .section-3 .header h2 {
+        font-size: 2.5rem;
+        line-height: 48px;
+    }
+
+    .section-3 .contact .text a {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .list ul {
+        gap: 16px;
+    }
+
+    main .main figure {
+        width: 40%;
+    }
+
+    main .header h1 {
+        font-size: 60px;
+        line-height: 72px;
+    }
+
+    main .bt-icon {
+        width: 40%;
+        align-self: flex-start;
+    }
+
+    .hero-section .header {
+        margin-top: 80px;
+    }
+
+    .header {
+        width: 60%;
+    }
+
+    .header h2 {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 54px;
+    }
+
+    .section-1 .bar {
+        width: 40%;
+        padding: 6px 8px;
+    }
+
+    .section-1 .bar ul li {
+        padding: 12px 24px;
+    }
+
+    .section-1 .bar ul li a {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .section-1 .bar ul li {
+        border-radius: 24px;
+    }
+
+    .section-1 .cards {
+        height: 1100px;
+    }
+
+    .section-1 .cards .card figure:hover a {
+        top: 72%;
+    }
+
+    .my-skills .items .last {
+        margin: 0;
+    }
+
+    .section-3 .contact,
+    .section-3 .form {
+        width: 45%;
+    }
+
+
+}
+
+@media screen and (min-width:1280px) {
+    .container {
+        width: 85%;
+    }
+    nav .list{
+        margin-left: 300px;
+      
+    }
+    .list ul {
+
+        gap: 24px;
+    }
+    main {
+        height: 100vh;
+        border: 2px solid;
+    }
+    main .main figure {
+        width: 35%;
+    }
+    main .header h1 {
+        font-size: 65px;
+        line-height: 78px;
+    }
+    main .pragraph {
+        align-self: self-start;
+        width: 40%;
+    }
+    .main .flex {
+        height: 700px;
+    }
+    main .bt-icon {
+        width: 34%;
+
+    }
+
+    main .counter .number h2 {
+        font-size: 64px;
+        line-height: 70px;
+    }
+    .header {
+        width: 50%;
+    }
+    .section-1 .cards .card figure:hover a {
+        top: 76%;
+    }
+    .my-skills .items{
+        justify-content: space-evenly;
+    }
+    .my-skills .icon {
+        padding: 30px 40px 15px;
+    
+    }
+}
+
+@media screen and (min-width:1536px) {
+    .container {
+        width: 70%;
+      }
+      nav .logo{
+        gap: 1.5rem;
+    }
+    .section-1 .cards {
+        height: 1300px;
+    }
+}
